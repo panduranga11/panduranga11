@@ -1,0 +1,364 @@
+#include <SPI.h>
+#include <MFRC522.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <SPI.h>
+#include <LiquidCrystal.h>
+#include <Adafruit_NeoPixel.h>
+#ifdef __AVR__
+ #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
+#endif
+#define LED_PIN A1
+
+#define LED_COUNT 4
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+
+#define SS_PIN 10
+#define RST_PIN 9
+MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
+int buz =8;
+int es=A3;
+int ws=A3;
+int ns=A3;
+int ss=A3;
+const int rs =2, en =3, d4 =4, d5 =5, d6 =6, d7 =7;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+int cnt=0,ecnt=0,wcnt=0,ncnt=0,scnt=0,sts=0,i=0;
+void setup() 
+{
+  Serial.begin(9600);   // Initiate a serial communication
+  SPI.begin();      // Initiate  SPI bus
+  mfrc522.PCD_Init();   // Initiate MFRC522
+  Serial.println("Approximate your card to the reader...");
+  Serial.println();
+  pinMode(es,INPUT);
+  pinMode(ws,INPUT);
+  pinMode(ns,INPUT);
+  pinMode(ss,INPUT);
+  pinMode(buz,OUTPUT);
+  lcd.begin(16,2);
+  lcd.print("  WELCOME");
+   strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
+strip.setBrightness(100);
+   
+   strip.setPixelColor(0, strip.Color(255,   0,   0));
+   strip.setPixelColor(1, strip.Color(255,   0,   0));
+   strip.setPixelColor(2, strip.Color(255,   0,   0));
+   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+  strip.show();            // Turn OFF all pixels ASAP
+  
+  
+}
+void loop() 
+{
+
+lcd.clear();
+cnt=5+ecnt;
+lcd.print("EAST :"+ String(cnt));
+ 
+ for(i=cnt;i>0;i--)
+ {
+  lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(0,     255,   0));
+   strip.setPixelColor(1, strip.Color(255,   0,   0));
+   strip.setPixelColor(2, strip.Color(255,   0,   0));
+   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+   strip.show();
+   scan_rfid();
+   
+    for(int k=0;k<10;k++)
+   {
+   delay(100);
+   scan(); 
+   } 
+ }
+ cnt=5+ncnt;
+lcd.clear();
+lcd.print("NORTH:"+ String(cnt));
+ 
+ for(i=cnt;i>0;i--)
+ {
+    lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(255,   0,   0));
+   strip.setPixelColor(1, strip.Color(0,   255,   0));
+   strip.setPixelColor(2, strip.Color(255,   0,   0));
+   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+   strip.show();
+   scan_rfid();
+   scan();
+   for(int k=0;k<10;k++)
+   {
+   delay(100);
+   scan(); 
+   }
+    
+ }
+ cnt=5+wcnt;
+lcd.clear();
+lcd.print("WEST :"+ String(cnt));
+ 
+ for(i=cnt;i>0;i--)
+ {
+    lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(255,   0,   0));
+   strip.setPixelColor(1, strip.Color(255,   0,   0));
+   strip.setPixelColor(2, strip.Color(0,   255,   0));
+   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+   strip.show();
+   scan_rfid();
+   for(int k=0;k<10;k++)
+   {
+   delay(100);
+   scan(); 
+   } 
+ }
+ cnt=5+scnt;
+lcd.clear();
+lcd.print("SOUTH:"+ String(cnt));
+ 
+ for(i=cnt;i>0;i--)
+ {
+    lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(255,   0,   0));
+   strip.setPixelColor(1, strip.Color(255,   0,   0));
+   strip.setPixelColor(2, strip.Color(255,   0,   0));
+   strip.setPixelColor(3, strip.Color(0,   255,   0));  
+   strip.show();
+   scan_rfid();
+      for(int k=0;k<10;k++)
+   {
+   delay(100);
+   scan(); 
+   }
+ }
+
+  
+  
+
+}
+
+ void scan_rfid()
+ {
+    if ( ! mfrc522.PICC_IsNewCardPresent()) 
+  {
+    return;
+  }
+  
+  if ( ! mfrc522.PICC_ReadCardSerial()) 
+  {
+    return;
+  }
+  
+  Serial.print("UID tag :");
+  String content= "";
+  byte letter;
+  for (byte i = 0; i < mfrc522.uid.size; i++) 
+  {
+     Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
+     Serial.print(mfrc522.uid.uidByte[i], HEX);
+     content.concat(String(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " "));
+     content.concat(String(mfrc522.uid.uidByte[i], HEX));
+  }
+  Serial.println();
+  Serial.print("Message : ");
+  content.toUpperCase();
+  sts=0;
+  /////////////////////////
+  if (content.substring(1) == "B5 46 C8 AB") //change here the UID of the card/cards that you want to give access
+  {
+    digitalWrite(buz,1);
+   
+    Serial.println("Ambulance..");
+    Serial.println();
+    sts=1;
+    delay(1000);
+    digitalWrite(buz,0);
+
+ cnt=5+ecnt;
+ lcd.clear();
+lcd.print("EAST :"+ String(cnt));
+      lcd.setCursor(11,0);
+    lcd.print("Amb");
+ for(i=cnt;i>0;i--)
+ {
+    lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(0,     255,   0));
+   strip.setPixelColor(1, strip.Color(255,   0,   0));
+   strip.setPixelColor(2, strip.Color(255,   0,   0));
+   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+   strip.show();
+   delay(1000); 
+ }
+  
+  }
+
+
+  if (content.substring(1) =="B4 D1 90 A9") //change here the UID of the card/cards that you want to give access
+  {
+    digitalWrite(buz,1);
+   
+    Serial.println("Ambulance..");
+    Serial.println();
+    sts=1;
+    delay(1000);
+    digitalWrite(buz,0);
+
+ cnt=5+ecnt;
+ lcd.clear();
+lcd.print("West :"+ String(cnt));
+      lcd.setCursor(11,0);
+    lcd.print("Amb");
+ for(i=cnt;i>0;i--)
+ {
+    lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(255,     0,   0));
+   strip.setPixelColor(1, strip.Color(0,   255,   0));
+   strip.setPixelColor(2, strip.Color(255,   0,   0));
+   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+   strip.show();
+   delay(1000); 
+ }
+  
+  }
+
+
+    if (content.substring(1) == "0A 45 2B 2E") //change here the UID of the card/cards that you want to give access
+  {
+    digitalWrite(buz,1);
+   
+    Serial.println("Ambulance..");
+    Serial.println();
+    sts=1;
+    delay(1000);
+    digitalWrite(buz,0);
+
+ cnt=5+ecnt;
+ lcd.clear();
+lcd.print("North :"+ String(cnt));
+      lcd.setCursor(11,0);
+    lcd.print("Amb");
+ for(i=cnt;i>0;i--)
+ {
+    lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(255,     0,   0));
+   strip.setPixelColor(1, strip.Color(255,   0,   0));
+   strip.setPixelColor(2, strip.Color(0,   255,   0));
+   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+   strip.show();
+   delay(1000); 
+ }
+  
+  }
+
+    if (content.substring(1) == "0B 3F 1E 85") //change here the UID of the card/cards that you want to give access
+  {
+    digitalWrite(buz,1);
+   
+    Serial.println("Ambulance..");
+    Serial.println();
+    sts=1;
+    delay(1000);
+    digitalWrite(buz,0);
+
+ cnt=5+ecnt;
+ lcd.clear();
+lcd.print("South :"+ String(cnt));
+      lcd.setCursor(11,0);
+    lcd.print("Amb");
+ for(i=cnt;i>0;i--)
+ {
+    lcd.setCursor(6,0);
+  lcd.print("   ");
+  lcd.setCursor(6,0);
+  lcd.print(i);
+   strip.setPixelColor(0, strip.Color(255,   0,   0));
+   strip.setPixelColor(1, strip.Color(255,   0,   0));
+   strip.setPixelColor(2, strip.Color(255,   0,   0));
+   strip.setPixelColor(3, strip.Color(0,   255,   0));  
+   strip.show();
+   delay(1000); 
+ }
+  
+  }
+  
+////////////////////
+//   if (content.substring(1) == "0A 45 2B 2E") //change here the UID of the card/cards that you want to give access
+//  {
+//
+//      digitalWrite(buz,1);
+//   
+// 
+//        lcd.setCursor(11,0);
+//    lcd.print("VIP");
+//    Serial.println("VIP Vehicle..");
+//    Serial.println();
+//    sts=1;
+//    cnt=5+ecnt;
+//       delay(1000);
+//    digitalWrite(buz,0);
+//  lcd.clear();
+//lcd.print("EAST :"+ String(cnt));
+// 
+//      lcd.setCursor(11,0);
+//    lcd.print("VIP");
+// for(i=cnt;i>0;i--)
+// {
+//    lcd.setCursor(6,0);
+//  lcd.print("   ");
+//  lcd.setCursor(6,0);
+//  lcd.print(i);
+//   strip.setPixelColor(0, strip.Color(0,     255,   0));
+//   strip.setPixelColor(1, strip.Color(255,   0,   0));
+//   strip.setPixelColor(2, strip.Color(255,   0,   0));
+//   strip.setPixelColor(3, strip.Color(255,   0,   0));  
+//   strip.show();
+//   delay(1000); 
+// }
+//    
+//  }
+ }
+
+ void scan()
+ {
+  if(digitalRead(es)==0)
+  {
+    ecnt=ecnt+1;
+  }
+
+    if(digitalRead(ws)==0)
+  {
+    wcnt=wcnt+1;
+  }
+
+    if(digitalRead(ns)==0)
+  {
+    ncnt=ncnt+1;
+  }
+
+    if(digitalRead(ss)==0)
+  {
+    scnt=scnt+1;
+  }
+ }
