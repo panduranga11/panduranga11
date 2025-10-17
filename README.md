@@ -83,7 +83,7 @@ Building an intelligent complaint management system that streamlines the process
  
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=panduranga11&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
+ 
 </div>
 
 ### 🧩 DSA Profiles
