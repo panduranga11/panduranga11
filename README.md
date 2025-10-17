@@ -80,8 +80,7 @@ Building an intelligent complaint management system that streamlines the process
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=panduranga11&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=panduranga11&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="170" />
-</div>
+ 
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=panduranga11&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
