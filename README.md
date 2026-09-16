@@ -14,7 +14,7 @@
 <img src="https://img.shields.io/badge/Role-Backend--Based%20Full%20Stack-7C3AED?style=for-the-badge&labelColor=0D1117" alt="role" />
 <img src="https://img.shields.io/badge/Core-Java%20%7C%20Spring%20%7C%20Node%20%7C%20React-22D3EE?style=for-the-badge&labelColor=0D1117" alt="core" />
 <img src="https://img.shields.io/badge/VIT--AP-CSE%202027-F59E0B?style=for-the-badge&labelColor=0D1117" alt="college" />
-<img src="https://img.shields.io/badge/CGPA-9.25%2F10-10B981?style=for-the-badge&labelColor=0D1117" alt="cgpa" />
+
 
 <br/><br/>
 
