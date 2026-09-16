@@ -1,120 +1,196 @@
-# Hi there, I'm Bollepalli Panduranga 👋
-
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;AI+Enthusiast;App+Development+Passionate;Always+Learning+New+Things" alt="Typing SVG" />
+
+# ⚡ Bollepalli Panduranga
+
+### Backend-Based Full Stack Developer  
+**Java · Spring Boot · Node.js · React · Cloud**
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=820&lines=Backend-Based+Full+Stack+Developer;Java+%7C+Spring+Boot+%7C+Microservices;Node.js+%7C+React+%7C+AWS;Building+reliable+production+systems" alt="typing" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/Role-Backend--Based%20Full%20Stack-7C3AED?style=for-the-badge&labelColor=0D1117" alt="role" />
+<img src="https://img.shields.io/badge/Core-Java%20%7C%20Spring%20%7C%20Node%20%7C%20React-22D3EE?style=for-the-badge&labelColor=0D1117" alt="core" />
+<img src="https://img.shields.io/badge/VIT--AP-CSE%202027-F59E0B?style=for-the-badge&labelColor=0D1117" alt="college" />
+<img src="https://img.shields.io/badge/CGPA-9.25%2F10-10B981?style=for-the-badge&labelColor=0D1117" alt="cgpa" />
+
+<br/><br/>
+
+<a href="https://linkedin.com/in/panduranga1108">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="https://github.com/panduranga11">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+<a href="https://codolio.com/profile/panda1108">
+  <img src="https://img.shields.io/badge/Codolio-7C3AED?style=for-the-badge" alt="Codolio" />
+</a>
+<a href="mailto:pandurangabollepalli@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
+
 </div>
 
-## 🚀 About Me
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-I'm a passionate **Full Stack Developer** with a keen interest in **Artificial Intelligence** and **App Development**. I love building innovative solutions that solve real-world problems and constantly pushing the boundaries of what's possible with code.
+## 👨‍💻 Developer Profile
 
-- 🔭 Currently working on **Smart Complaint Portal**
-- 🌱 Learning **MERN Stack Development**, **Java**, and **Data Structures & Algorithms**
-- 💡 Exploring the intersection of AI and web development
-- 🎯 Goal: Build impactful applications that make a difference
-- ⚡ Fun fact: I believe every bug is just an opportunity to learn something new!
+<table>
+<tr>
+<td width="55%" valign="top">
 
----
+### Backend-Based Full Stack Developer
 
-## 🛠️ Tech Stack
+I build **end-to-end applications** with strong focus on the **backend**: APIs, auth, databases, messaging, and cloud deployment — and I complete the loop with clean **React** frontends.
 
-### Languages
+- 🧩 **Backend:** Java, Spring Boot, Spring Cloud, Node.js, Express  
+- 🖥️ **Frontend:** React, HTML, CSS, Tailwind  
+- 🗄️ **Data:** PostgreSQL, MySQL, MongoDB, Redis  
+- ☁️ **Cloud/DevOps:** Docker, AWS EC2, Nginx  
+- 🔄 **Systems:** Kafka, RabbitMQ, WebSocket / STOMP  
 
+**Currently shipping**
+- **CodeForge** — microservices contest platform  
+- **JanSamadhan** — civic complaint portal on AWS  
 
-<p align="left">
+</td>
+<td width="45%" align="center" valign="top">
+
+<img src="https://github-readme-stats.shion.dev/api?username=panduranga11&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0D1117&title_color=A78BFA&icon_color=22D3EE&text_color=E2E8F0" height="170" alt="GitHub Stats" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=panduranga11&theme=radical&hide_border=true&background=0D1117&ring=A78BFA&fire=F59E0B&currStreakLabel=22D3EE" height="170" alt="GitHub Streak" />
+
+</td>
+</tr>
+</table>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
+
+## 🛠️ Development Stack
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,js,nodejs,express,react,postgres,mysql,mongo,redis,docker,aws,nginx,html,css,tailwind,git,github,postman,idea,vscode,py,c&perline=11" alt="Tech Stack" />
+</div>
+
+<br/>
+
+<details>
+<summary><b>View stack badges</b></summary>
+<br/>
+<p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Spring_Cloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Cloud" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka" />
+  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
 </p>
+</details>
 
-### Frontend
-<p align="left">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-</p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-### Backend
-<p align="left">
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
-</p>
+## 🚀 Featured Applications
 
-### Cloud & Tools
-<p align="left">
-  <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-</p>
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+### ⚔️ CodeForge
+**Backend-heavy full stack · Microservices platform**
 
-## 🧰 Tools & Platforms
+`Java 17` `Spring Boot` `Spring Cloud` `PostgreSQL` `Redis` `Kafka` `RabbitMQ` `Docker` `React`
 
-<p align="left">
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA" />
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</p>
+- API Gateway + Eureka service discovery  
+- Docker-sandboxed code execution service  
+- Async flows with RabbitMQ + Kafka  
+- Redis leaderboards + WebSocket updates  
+- OAuth2 + JWT authentication  
 
----
+</td>
+<td width="50%" valign="top">
 
-## 🔥 Current Project
+### 🏛️ JanSamadhan
+**Full stack web app · Deployed on AWS**
 
-### 🎯 Smart Complaint Portal
-Building an intelligent complaint management system that streamlines the process of reporting and resolving issues. This project combines modern web technologies with smart automation to enhance user experience and efficiency.
+`React` `Node.js` `Express` `MySQL` `Socket.IO` `Gemini` `Docker` `AWS EC2` `Nginx`
 
-**Tech Stack:** MERN Stack | React | Node.js | Express | MongoDB
+- JWT + RBAC secured REST APIs  
+- Gemini-assisted complaint routing  
+- Realtime chat with Socket.IO  
+- Dockerized 3-tier deploy on EC2  
+- Hardened SQL and auth flows  
 
----
+</td>
+</tr>
+</table>
 
-## 📚 Currently Learning
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider" />
 
-- 🔸 **MERN Stack Development** - Building full-stack applications
-- 🔸 **Advanced Java** - Deepening my backend expertise
-- 🔸 **Data Structures & Algorithms** - Mastering problem-solving skills
-
----
-
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=panduranga11&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="170" />
- 
-
-<div align="center">
- 
+  <img height="180" src="https://github-readme-stats.shion.dev/api?username=panduranga11&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0D1117&title_color=A78BFA&icon_color=22D3EE&text_color=E2E8F0" alt="stats" />
+  <img height="180" src="https://streak-stats.demolab.com/?user=panduranga11&theme=radical&hide_border=true&background=0D1117&ring=A78BFA&fire=F59E0B&currStreakLabel=22D3EE" alt="streak" />
 </div>
 
-### 🧩 DSA Profiles
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=panduranga11&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=E2E8F0" alt="languages" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=panduranga11&theme=radical&no-frame=true&column=7&margin-w=8" alt="trophies" />
+</div>
+
+## 🧾 Certifications
 
 <p align="center">
-  <a href="https://leetcode.com/pandurangabollepalli">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" />
-  </a>
-  <a href="https://www.geeksforgeeks.org/user/pandurangabollepalli">
-    <img src="https://img.shields.io/badge/GeeksforGeeks-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks" />
-  </a>
+  <img src="https://img.shields.io/badge/AWS_Academy-Cloud_Architecting-FF9900?style=for-the-badge&labelColor=0D1117" alt="AWS" />
+  <img src="https://img.shields.io/badge/Spring_Boot-Udemy-6DB33F?style=for-the-badge&labelColor=0D1117" alt="Spring" />
+  <img src="https://img.shields.io/badge/MERN_Full_Stack-Ethnus-339933?style=for-the-badge&labelColor=0D1117" alt="MERN" />
+  <img src="https://img.shields.io/badge/GenAI_Workshop-OpenAI%20%26%20NxtWave-7C3AED?style=for-the-badge&labelColor=0D1117" alt="GenAI" />
 </p>
 
----
-## 🤝 Connect With Me
-<p align="left">
-  <a href="https://github.com/panduranga11"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://linkedin.com/in/panduranga1108"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:pandurangabollepalli@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-</p>
-
----
+## 🤝 Connect
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=panduranga11&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
-</div>
 
-<div align="center">
-  
-### ⭐ From [panduranga11](https://github.com/panduranga11)
+Interested in **backend systems**, **full stack product building**, **Spring Boot**, and **cloud deployments**.
 
-*"Building the future, one commit at a time."*
+<br/>
+
+<a href="https://linkedin.com/in/panduranga1108">
+  <img src="https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+</a>
+<a href="mailto:pandurangabollepalli@gmail.com">
+  <img src="https://img.shields.io/badge/Mail-Me-D14836?style=for-the-badge&logo=gmail" alt="Email" />
+</a>
+<a href="https://github.com/panduranga11">
+  <img src="https://img.shields.io/badge/Follow-GitHub-181717?style=for-the-badge&logo=github" alt="GitHub" />
+</a>
+
+<br/><br/>
+
+**Build → Break → Debug → Understand → Build Better**
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=panduranga11&label=PROFILE%20VIEWS&color=7c3aed&style=for-the-badge" alt="views" />
 
 </div>
